@@ -19,31 +19,32 @@
     <div class="main-container">
         <header>
             <div class="header">
-            <div class="logobookie"> <img src="images/logo/Booki.png" alt="Logo Bookie"> </div>
+            <div class="logo"> <img src="images/logo/Booki.png" alt="Logo Bookie" class="logobookie"> </div>
             <nav>
-                <div> <a href="#Hebergements">Hébergements</a></div>
-                <div> <a href="#Activites">Ativités</a></div>
+                <a href="#Hebergements" class="navigation">Hébergements</a>
+                <a href="#Activites" class="navigation">Activités</a>
             </nav>
             </div>
         </header>
         <section>
             <div>
-            <div> <h1>Trouvez votre Hébergement pour des vacances de rêve</h1></div>
+            <div class="h1"> <h1>Trouvez votre Hébergement pour des vacances de rêve</h1></div>
             <div> <p>En plein centre-ville ou en pleine nature</p></div>
             </div>
-            <div> 
-                <form method="get" action="">
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="text" name="lieu" placeholder="Marseille, France">
-                <input type="submit" value="Rechercher">
+            <div class="formulaire"> 
+                <form method="get" action="" class="module-recherche">
+                <div class="location-dot">    <i class="fa-solid fa-location-dot" id="location" ></i> </div>
+                <input type="text" name="lieu" id="marseille" placeholder="Marseille, France" class="barre-recherche">
+                <input type="submit" value="Rechercher" class="bouton">
             </form> 
             </div>
-            <div>
+
+            <div class="filtres">
                 <p>Filtres</p>
-                <div> <i class="fa-solid fa-money-bill-wave"></i> <a  href="">Economique</a> </div>
-                <div> <i class="fa-solid fa-person"></i> <a  href="">Familial</a> </div>
-                <div> <i class="fa-solid fa-heart"></i> <a  href="">Romantique</a> </div>
-                <div> <i class="fa-solid fa-fire"></i> <a  href="">Nos pépites</a> </div>
+                <div class="bouton-filtres"> <i class="fa-solid fa-money-bill-wave"></i> <a  href="">Economique</a> </div>
+                <div class="bouton-filtres"> <i class="fa-solid fa-person"></i> <a  href="">Familial</a> </div>
+                <div class="bouton-filtres"> <i class="fa-solid fa-heart"></i> <a  href="">Romantique</a> </div>
+                <div class="bouton-filtres"> <i class="fa-solid fa-fire"></i> <a  href="">Nos pépites</a> </div>
             </div>
             <div> 
                 <i class="fa-solid fa-circle-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
