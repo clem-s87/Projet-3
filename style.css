@@ -376,6 +376,26 @@ main {
     box-shadow: 0px 3PX 15PX #0000001A;;
  }
 
+ /* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    width: 33%;
+}
+
+footer .text-gras {
+    margin: 0px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
