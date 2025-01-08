@@ -334,9 +334,47 @@ main {
     margin-bottom: 5px;
 }
 
+/* Activités  */
 
+.acti {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
 
+.activites {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
 
+}
+
+.images-activites {
+    width: 297px;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+ .minia {
+    display: flex;
+    flex-direction: column;
+    
+    
+ }
+
+ .text-activites {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3PX 15PX #0000001A;;
+ }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
