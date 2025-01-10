@@ -467,6 +467,35 @@ footer .text-gras {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media screen and (max-width: 767.98px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header .logo {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+        height: 36px;
+    }
+
+    nav a {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .navigation:hover {
+        border-bottom: solid 2px #0065FC;
+        border-top: none;
+
+    }
+
 }
