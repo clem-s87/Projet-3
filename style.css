@@ -34,6 +34,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+
 }
 
 .section-title {
@@ -253,6 +254,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding-top: 33px;
+    gap: 20px;
 }
 
 .hebergements-cards img {
@@ -263,7 +265,6 @@ main {
 }
 
 .hebergements-cards .card {
-    width: 250px;
     height: 200px;
 }
 
@@ -285,6 +286,10 @@ main {
 .text-gras {
     font-size: 18px;
     font-weight: bold;
+}
+
+.hebergements-cards a {
+    width: 33%;
 }
 
 
