@@ -76,15 +76,10 @@ a {
     align-items: center;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    }
-
 nav {
     display: flex;
     gap: 60px;
+    height: 35px;
 }
 
 .navigation:hover {
@@ -94,11 +89,12 @@ nav {
 nav a {
     display: flex;
     align-items: flex-end;
-    height: 35px;
 }
 
 header {
     height: 79px;
+    display: flex;
+    justify-content: space-between;
     
 }
 
@@ -226,7 +222,7 @@ main {
 .hebergements-and-populaires {
     display: flex;
     gap: 40px;
-    height: 620px;
+    height: auto;
 }
 
 .hebergements-and-populaires section {
@@ -265,7 +261,7 @@ main {
 }
 
 .hebergements-cards .card {
-    height: 200px;
+    height: auto;
 }
 
 .hebergements-cards .card-txt {
@@ -286,6 +282,7 @@ main {
 .text-gras {
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .hebergements-cards a {
@@ -345,6 +342,7 @@ main {
     flex-direction: column;
     gap: 30px;
     padding: 30px;
+    width: 100%;
 }
 
 .activites {
@@ -356,28 +354,33 @@ main {
 }
 
 .images-activites {
-    width: 297px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
  .minia {
-    display: flex;
-    flex-direction: column;
-    
-    
+    width: 22%;
+    height: auto;   
+
  }
 
  .text-activites {
     font-size: 16px;
     font-weight: bold;
     margin: 0px;
-    padding: 20px;
+    padding-left: 12px;
+    padding-right: 5px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #FFFFFF;
-    box-shadow: 0px 3PX 15PX #0000001A;;
+    box-shadow: 0px 3PX 15PX #0000001A;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 59px;
+
  }
 
  .text-activites-2 {
@@ -390,6 +393,7 @@ main {
     background-color: #FFFFFF;
     box-shadow: 0px 3PX 15PX #0000001A;;
  }
+
 
  /* Footer */
 
@@ -453,7 +457,7 @@ footer .text-gras {
 
     .minia img {
         height: 200px;
-        width: 190px;
+        width: 100%;
     }
     
     .text-activites-2 {
