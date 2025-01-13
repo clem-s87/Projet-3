@@ -23,6 +23,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 375px;
     padding: 0 50px;
     box-sizing: border-box;
     display: flex;
@@ -155,7 +156,7 @@ h1 {
     font-size: 18px;
 }
 
-.bouton {
+#bouton {
     background-color: #0065FC;
     font-size: 18px;
     color: white;
@@ -169,14 +170,24 @@ h1 {
 
 }
 
+#bouton-loupe {
+    display: none;
+}
+
 /* filtres */
 
 .filtres {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 15px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.filtres-boutons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .bouton-filtres {
@@ -184,6 +195,7 @@ h1 {
     border-radius: 25px;
     padding: 12px;
     display: flex;
+    flex-direction: row;
     gap: 10px;
 }
 
@@ -422,7 +434,6 @@ footer .text-gras {
 @media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
-        height: 910px;
         gap: 50px;
         padding-bottom: 40px;
     }
@@ -469,9 +480,15 @@ footer .text-gras {
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
     
+    .main-container {
+        padding: 0px;
+    }
+
     header {
         display: flex;
         flex-direction: column;
+        height: 115px;
+
     }
     header .logo {
         display: flex;
@@ -484,12 +501,14 @@ footer .text-gras {
         display: flex;
         justify-content: space-around;
         gap: 15px;
-        height: 36px;
     }
 
     nav a {
         display: flex;
         align-items: flex-start;
+        height: 35px;
+        width: 50%;
+        justify-content: center;
     }
 
     .navigation:hover {
@@ -498,4 +517,84 @@ footer .text-gras {
 
     }
 
+    .sous-header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .text-sous-header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #bouton {
+        display: none;
+    }
+
+    #bouton-loupe {
+        display: flex;
+        height: 100%;
+        width: 49px;
+        border-radius: 15px;
+        background-color: #0065FC;
+        border: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulaire button i {
+        color: white;
+    }
+
+    .filtres {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .filtres-boutons {
+        display: flex;
+    }
+
+    .bouton-filtres {
+        width: 130px;
+        align-items: center;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        margin-top: 0px;
+    }
+
+    .populaires {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+        padding: 20px;
+
+    }
 }

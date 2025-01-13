@@ -25,7 +25,7 @@
                 </nav>
         </header>
         <section class="sous-header">
-            <div>
+            <div class="text-sous-header">
             <div class="h1"> <h1>Trouvez votre Hébergement pour des vacances de rêve</h1></div>
             <div> <p>En plein centre-ville ou en pleine nature</p></div>
             </div>
@@ -33,17 +33,20 @@
                 <form method="get" action="" class="module-recherche">
                 <div class="location-dot">    <i class="fa-solid fa-location-dot" id="location" ></i> </div>
                 <input type="text" name="lieu" id="marseille" placeholder="Marseille, France" class="barre-recherche">
-                <input type="submit" value="Rechercher" class="bouton">
+                <input type="submit" value="Rechercher" id="bouton">
+                <button id="bouton-loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form> 
             </div>
             <!-- Filtres -->
 
             <div class="filtres">
-                <p>Filtres</p>
+                <div><p>Filtres</p></div>
+            <div class="filtres-boutons">
                 <div class="bouton-filtres"> <i class="fa-solid fa-money-bill-wave"></i> <a  href="">Économique</a> </div>
                 <div class="bouton-filtres"> <i class="fa-solid fa-person"></i> <a  href="">Familial</a> </div>
                 <div class="bouton-filtres"> <i class="fa-solid fa-heart"></i> <a  href="">Romantique</a> </div>
                 <div class="bouton-filtres"> <i class="fa-solid fa-fire"></i> <a  href="">Nos pépites</a> </div>
+            </div>
             </div>
             <div class="information"> 
                 <i class="fa-solid fa-info" id="info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
